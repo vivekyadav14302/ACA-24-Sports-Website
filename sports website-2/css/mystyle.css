@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    background: url(../images/bg3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo span img{
+    height: 12vh;
+    margin-right: 10rem;
+    margin-top: 1rem;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.logo span img:hover{
+    transform: scale(0.7,0.7);
+}
+.navbar{
+    margin-left: 15%;
+    
+}
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    overflow: hidden;
+    transition: 0.2s;
+    margin-top: 3rem;
+}
+
+
+
+a:hover {
+    color: #000000;
+    background: #ffffff;
+    box-shadow: 0 0 10px #ffffff, 0 0 40px #ffffff, 0 0 80px #ffffff;
+    transition-delay: 1s;
+}
+
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+
+
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffffff);
+}
+
+
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffffff);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffffff);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffffff);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+.content{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+}
+
+.content h2{
+    color: rgb(255, 251, 0);
+    font-size: 2.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    
+}
+
+.content h2:hover{
+    color: rgb(0, 0, 0);
+}
+
+.content h2 span:hover{
+    color: rgb(0, 0, 0);
+}
+.content h2 span{
+    color: yellow;
+    font-size: 2.6rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    margin-left: 10rem;
+    margin-top: 20%;
+}
